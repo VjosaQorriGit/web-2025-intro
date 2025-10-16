@@ -1,0 +1,107 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjosa Qorri — Programmer</title>
+    <style>
+        :root{
+            --bg:#0f1724;
+            --card:#0b1220;
+            --accent:#6ee7b7;
+            --muted:#9aa6b2;
+            --glass: rgba(255,255,255,0.03);
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        html,body{height:100%;margin:0;background:linear-gradient(180deg,#071026 0%, #0b1530 100%);color:#e6eef6}
+        .container{max-width:900px;margin:40px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.7)}
+        header{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+        .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;color:#042;flex-shrink:0;font-weight:700;font-size:28px}
+        h1{margin:0;font-size:22px}
+        p.lead{margin:6px 0 0;color:var(--muted)}
+        .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:18px}
+        .card{background:var(--card);padding:18px;border-radius:10px}
+        .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+        .skill{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--accent);font-weight:600;font-size:13px}
+        .projects li{margin-bottom:8px}
+        a.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#042;text-decoration:none;font-weight:600}
+        footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+        @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:80px;height:80px}}
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <header>
+            <div class="avatar" aria-hidden="true">VQ</div>
+            <div>
+                <h1>Vjosa Qorri</h1>
+                <div class="lead">Full‑stack developer • JavaScript, Python, React • Open source contributor</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <section class="card" aria-labelledby="about-heading">
+                <h2 id="about-heading">About</h2>
+                <p>
+                    Programmer & software engineer with a passion for building clean, accessible web experiences.
+                    Comfortable across the stack — from UI and accessibility to server APIs and deployment.
+                    Enjoys learning new languages, mentoring peers, and contributing to open-source projects.
+                </p>
+
+                <h3 style="margin-top:14px;margin-bottom:6px">Skills</h3>
+                <div class="skills" aria-hidden="false">
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">TypeScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Node.js</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Django</div>
+                    <div class="skill">HTML & CSS</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">Testing</div>
+                </div>
+
+                <h3 style="margin-top:14px;margin-bottom:6px">Selected Projects</h3>
+                <ul class="projects" aria-label="Selected projects">
+                    <li><strong>TaskFlow</strong> — productivity web app with realtime collaboration. <a href="#" style="color:var(--accent)">Live</a> · <a href="#" style="color:var(--accent)">Repo</a></li>
+                    <li><strong>OpenDocs</strong> — documentation generator and search for developer docs. <a href="#" style="color:var(--accent)">Repo</a></li>
+                    <li><strong>Portfolio</strong> — accessible, responsive site built with React + Vite. <a href="#" style="color:var(--accent)">Live</a></li>
+                </ul>
+
+                <h3 style="margin-top:14px;margin-bottom:6px">Experience & Education</h3>
+                <p class="muted" style="color:var(--muted);margin:0">
+                    Software Engineer — 3+ years building web products. <br>
+                    B.Sc. Computer Science — focused on software engineering and HCI.
+                </p>
+            </section>
+
+            <aside class="card" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact & Links</h2>
+                <p style="margin-top:6px">
+                    Email: <a href="mailto:vjosa@example.com" style="color:var(--accent)">vjosa@example.com</a><br>
+                    Location: Pristina, Kosovo
+                </p>
+
+                <div style="margin-top:12px">
+                    <a class="btn" href="resume.pdf" download>Download Resume</a>
+                </div>
+
+                <h3 style="margin-top:14px;margin-bottom:8px">Social</h3>
+                <p style="margin:0">
+                    <a href="#" style="color:var(--accent);text-decoration:none;margin-right:10px">GitHub</a>
+                    <a href="#" style="color:var(--accent);text-decoration:none;margin-right:10px">LinkedIn</a>
+                    <a href="#" style="color:var(--accent);text-decoration:none">Twitter</a>
+                </p>
+
+                <h3 style="margin-top:14px;margin-bottom:8px">Availability</h3>
+                <p style="margin:0;color:var(--muted)">Open to freelance and full‑time roles. Happy to discuss front‑end and full‑stack positions.</p>
+            </aside>
+        </div>
+
+        <footer>
+            © Vjosa Qorri — Built with curiosity and care. View source on <a href="#" style="color:var(--accent)">GitHub</a>.
+        </footer>
+    </div>
+</body>
+</html>
